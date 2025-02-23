@@ -1,0 +1,242 @@
+/* Stile generale del corpo della pagina */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://www.focus.it/site_stored/imgs/0004/015/sls_nasa4x3.1020x680.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* Stile dell'intestazione */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+/* Stile del testo di benvenuto */
+.welcome-text {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Animazione di apparizione */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stile delle sezioni */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Stile del pulsante del menu */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 2em;
+    cursor: pointer;
+    background: none;
+    color: white;
+    border: none;
+    z-index: 1001;
+}
+
+/* Stile del menu laterale */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: rgba(0, 47, 94, 0.95);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    z-index: 1000;
+    transition: left 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.side-menu a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, background 0.3s ease;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+/* Stile quando il menu è aperto */
+.side-menu.open {
+    left: 0;
+}
+
+/* Effetto hover sui link del menu */
+.side-menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transform: scale(1.1); /* Effetto di ingrandimento leggero */
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out, background 0.3s ease; /* Animazione fluida */
+    padding: 10px 20px; /* Mantiene proporzioni corrette */
+}
+
+/* Stile del pulsante di chiusura del menu */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    cursor: pointer;
+    background: none;
+    color: white;
+    border: none;
+}
+
+/* Adattamenti per schermi più piccoli */
+@media (max-width: 768px) {
+    .welcome-text {
+        font-size: 1.8em;
+    }
+
+    .section {
+        width: 90%;
+        padding: 40px 15px;
+    }
+
+    .side-menu {
+        width: 200px;
+        left: -200px;
+    }
+
+    .side-menu.open {
+        left: 0;
+    }
+
+    .side-menu a {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+}
+
+/* Logo del team */
+.team-image {
+    width: 80%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Info sui membri */
+#contentContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Maggiore adattabilità */
+    max-width: 900px; /* Più spazio per i membri */
+    height: auto;
+    max-height: 90vh; /* Evita che si espanda troppo */
+    background: rgba(0, 47, 94, 0.95);
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1002;
+    overflow-y: auto; /* Abilita lo scroll se serve */
+}
+
+/* Sistema il layout dei membri per adattarsi meglio */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    width: calc(50% - 20px); /* Riduce la larghezza per stare nei margini */
+    max-width: 250px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Media query per adattare la visualizzazione sui dispositivi mobili */
+@media (max-width: 768px) {
+    .team-member {
+        width: 100%; /* Full width per mobile */
+    }
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.team-member p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.team-member a {
+    display: block;
+    color: #00BFFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.team-member a:hover {
+    text-decoration: underline;
+}
