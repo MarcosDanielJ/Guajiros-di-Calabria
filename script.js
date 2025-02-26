@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <a href="mailto:jonathancarogonzalez5@gmail.com">jonathancarogonzalez5@gmail.com</a>
                             </div>
                             <div class="team-member">
-                                <img src="img/member4.jpg" alt="Member 4">
+                                <img src="https://raw.githubusercontent.com/MarcosDanielJ/Guajiros-di-Calabria/refs/heads/main/tey.jpg" alt="Member 4">
                                 <h3>Luis Tey</h3>
                                 <p>MSc. Mechanical Engineering</p>
                                 <a href="mailto:alextey987@gmail.com">alextey987@gmail.com</a>
