@@ -70,31 +70,31 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <img src="img/member1.jpg" alt="Member 1">
                                 <h3>Asiel Velasco</h3>
                                 <p>BSc. Mechanical Engineering</p>
-                                <a href="mailto:email1@example.com">email1@example.com</a>
+                                <a href="mailto:asielvs28@gmail.com">asielvs28@gmail.com</a>
                             </div>
                             <div class="team-member">
                                 <img src="img/member2.jpg" alt="Member 2">
                                 <h3>Andrea Veltri</h3>
                                 <p>BSc. Mechanical Engineering</p>
-                                <a href="mailto:email2@example.com">email2@example.com</a>
+                                <a href="mailto:andreaveltri60@gmail.com">andreaveltri60@gmail.com</a>
                             </div>
                             <div class="team-member">
                                 <img src="img/member3.jpg" alt="Member 3">
                                 <h3>Jonathan Caro</h3>
                                 <p>BSc. Mechanical Engineering</p>
-                                <a href="mailto:email3@example.com">email3@example.com</a>
+                                <a href="mailto:jonathancarogonzalez5@gmail.com">jonathancarogonzalez5@gmail.com</a>
                             </div>
                             <div class="team-member">
                                 <img src="img/member4.jpg" alt="Member 4">
-                                <h3>Luis O. Tey</h3>
+                                <h3>Luis Tey</h3>
                                 <p>MSc. Mechanical Engineering</p>
-                                <a href="mailto:email4@example.com">email4@example.com</a>
+                                <a href="mailto:alextey987@gmail.com">alextey987@gmail.com</a>
                             </div>
                             <div class="team-member">
                                 <img src="https://raw.githubusercontent.com/MarcosDanielJ/Guajiros-di-Calabria/refs/heads/main/IMG_0094.jpg" alt="Member 5">
-                                <h3>Marcos D. Jimenez</h3>
+                                <h3>Marcos Jimenez</h3>
                                 <p>BSc. Electronic Engineering</p>
-                                <a href="mailto:email5@example.com">email5@example.com</a>
+                                <a href="mailto:marcosdaniel20cu@gmail.com">marocsdaniel20cu@gmail.com</a>
                             </div>
                         </div>
                     `;
