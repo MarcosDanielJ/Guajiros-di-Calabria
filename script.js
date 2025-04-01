@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p>Here are some of the projects we've been working on:</p>
                     <div class="project-video">
                         <h3>Project 1: Amazing Project Video</h3>
-                        <!-- YouTube video embed -->
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="project-video">
@@ -92,7 +91,30 @@ document.addEventListener("DOMContentLoaded", function() {
                             <p>BEng. Mechanical Engineering</p>
                             <a href="mailto:email1@example.com">email1@example.com</a>
                         </div>
-                        <!-- More team members -->
+                        <div class="team-member">
+                                <img src="img/member2.jpg" alt="Member 2">
+                                <h3>Andrea Veltri</h3>
+                                <p>BEng. Mechanical Engineering</p>
+                                <a href="mailto:email2@example.com">email2@example.com</a>
+                            </div>
+                            <div class="team-member">
+                                <img src="img/member3.jpg" alt="Member 3">
+                                <h3>Jonathan Caro</h3>
+                                <p>BEng. Mechanical Engineering</p>
+                                <a href="mailto:email3@example.com">email3@example.com</a>
+                            </div>
+                            <div class="team-member">
+                                <img src="img/member4.jpg" alt="Member 4">
+                                <h3>Luis O. Tey</h3>
+                                <p>MEng. Mechanical Engineering</p>
+                                <a href="mailto:email4@example.com">email4@example.com</a>
+                            </div>
+                            <div class="team-member">
+                                <img src="https://raw.githubusercontent.com/MarcosDanielJ/Guajiros-di-Calabria/refs/heads/main/IMG_0094.jpg" alt="Member 5">
+                                <h3>Marcos D. Jimenez</h3>
+                                <p>BEng. Electronic Engineering</p>
+                                <a href="mailto:email5@example.com">email5@example.com</a>
+                            </div>
                     </div>
                 `;
                 break;
