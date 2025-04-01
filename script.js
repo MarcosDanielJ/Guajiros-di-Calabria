@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <h3>Project 2: Another Awesome Project</h3>
                         <!-- Local video -->
                         <video width="560" controls>
-                            <source src="path/to/your-video.mp4" type="video/mp4">
+                            <source src="https://www.youtube.com/shorts/RRpb3J103oo" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
