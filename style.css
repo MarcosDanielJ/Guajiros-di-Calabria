@@ -152,6 +152,16 @@ header {
     }
 }
 
+* Logo del team */
+.team-image {
+    width: 80%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 /* Project video container */
 .project-video {
     margin-bottom: 20px;
