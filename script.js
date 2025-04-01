@@ -5,14 +5,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const menuLinks = document.querySelectorAll(".side-menu a");
     const contentContainer = document.createElement("div");
 
-    // Creazione della finestra modale
+    // Create the modal container
     contentContainer.id = "contentContainer";
     contentContainer.style.position = "fixed";
     contentContainer.style.top = "50%";
     contentContainer.style.left = "50%";
     contentContainer.style.transform = "translate(-50%, -50%)";
-    contentContainer.style.width = "80%";
-    contentContainer.style.maxWidth = "600px";
+    contentContainer.style.width = "90%"; // Adjust to screen width
+    contentContainer.style.maxWidth = "900px"; // Larger for content
+    contentContainer.style.height = "auto"; // Allows the window to grow without fixed limits
+    contentContainer.style.maxHeight = "90vh"; // Prevents vertical overflow
+    contentContainer.style.overflowY = "auto"; // Enables scrolling if needed
     contentContainer.style.background = "rgba(0, 47, 94, 0.95)";
     contentContainer.style.color = "white";
     contentContainer.style.padding = "20px";
@@ -32,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         sideMenu.classList.remove("open");
     });
 
-    // Chiudi il menu se si clicca fuori
+    // Close menu if clicked outside
     document.addEventListener("click", function(event) {
         if (!sideMenu.contains(event.target) && !menuToggle.contains(event.target) && event.target !== contentContainer) {
             sideMenu.classList.remove("open");
@@ -40,10 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Gestisci il click sui link del menu
+    // Handle click on menu links
     menuLinks.forEach(link => {
         link.addEventListener("click", function(event) {
-            event.preventDefault(); // Evita il comportamento predefinito
+            event.preventDefault(); // Prevent default behavior
             const sectionName = this.getAttribute("href").substring(1);
             showContent(sectionName);
             sideMenu.classList.remove("open");
@@ -54,7 +57,24 @@ document.addEventListener("DOMContentLoaded", function() {
         let content = "";
         switch(section) {
             case "progetti":
-                content = "<h2>Projects</h2><p>Details about our projects.</p>";
+                content = `
+                    <h2>Projects</h2>
+                    <p>Here are some of the projects we've been working on:</p>
+                    <div class="project-video">
+                        <h3>Project 1: Amazing Project Video</h3>
+                        <!-- YouTube video embed -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-video">
+                        <h3>Project 2: Another Awesome Project</h3>
+                        <!-- Local video -->
+                        <video width="560" controls>
+                            <source src="path/to/your-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p>More details coming soon...</p>
+                `;
                 break;
             case "eventi":
                 content = "<h2>Events</h2><p>Upcoming events and past highlights.</p>";
@@ -62,46 +82,23 @@ document.addEventListener("DOMContentLoaded", function() {
             case "risorse":
                 content = "<h2>Sources</h2><p>Useful resources and references.</p>";
                 break;
-                case "contatti":
-                    content = `
-                        <h2>Get in touch</h2>
-                        <div class="team-container">
-                            <div class="team-member">
-                                <img src="img/member1.jpg" alt="Member 1">
-                                <h3>Asiel Velasco</h3>
-                                <p>BSc. Mechanical Engineering</p>
-                                <a href="mailto:asielvs28@gmail.com">asielvs28@gmail.com</a>
-                            </div>
-                            <div class="team-member">
-                                <img src="img/member2.jpg" alt="Member 2">
-                                <h3>Andrea Veltri</h3>
-                                <p>BSc. Mechanical Engineering</p>
-                                <a href="mailto:andreaveltri60@gmail.com">andreaveltri60@gmail.com</a>
-                            </div>
-                            <div class="team-member">
-                                <img src="img/member3.jpg" alt="Member 3">
-                                <h3>Jonathan Caro</h3>
-                                <p>BSc. Mechanical Engineering</p>
-                                <a href="mailto:jonathancarogonzalez5@gmail.com">jonathancarogonzalez5@gmail.com</a>
-                            </div>
-                            <div class="team-member">
-                                <img src="https://raw.githubusercontent.com/MarcosDanielJ/Guajiros-di-Calabria/refs/heads/main/tey.jpg" alt="Member 4">
-                                <h3>Luis Tey</h3>
-                                <p>MSc. Mechanical Engineering</p>
-                                <a href="mailto:alextey987@gmail.com">alextey987@gmail.com</a>
-                            </div>
-                            <div class="team-member">
-                                <img src="https://raw.githubusercontent.com/MarcosDanielJ/Guajiros-di-Calabria/refs/heads/main/IMG_0094.jpg" alt="Member 5">
-                                <h3>Marcos Jimenez</h3>
-                                <p>BSc. Electronic Engineering</p>
-                                <a href="mailto:marcosdaniel20cu@gmail.com">marocsdaniel20cu@gmail.com</a>
-                            </div>
+            case "contatti":
+                content = `
+                    <h2>Get in touch</h2>
+                    <div class="team-container">
+                        <div class="team-member">
+                            <img src="img/member1.jpg" alt="Member 1">
+                            <h3>Asiel Velasco</h3>
+                            <p>BSc. Mechanical Engineering</p>
+                            <a href="mailto:email1@example.com">email1@example.com</a>
                         </div>
-                    `;
-                    break;
-                default:
-                    content = "<h2>Section not found</h2>";
-            }
+                        <!-- More team members -->
+                    </div>
+                `;
+                break;
+            default:
+                content = "<h2>Section not found</h2>";
+        }
         contentContainer.innerHTML = content + '<br><button id="closeContent">Close</button>';
         contentContainer.style.display = "block";
 
