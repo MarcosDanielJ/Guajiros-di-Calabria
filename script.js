@@ -78,8 +78,9 @@ document.addEventListener("DOMContentLoaded", function() {
             case "eventi":
                 content = "<h2>Events</h2><p>Upcoming events and past highlights.</p>";
                 break;
-            case "risorse":
+           case "risorse":
                 content = "<h2>Sources</h2><p>Useful resources and references.</p>";
+                content += "<p><a href='Airbus_Sloshing_Rocket_Workshop.pdf' target='_blank'>Download the PDF</a></p>";
                 break;
             case "contatti":
                 content = `
