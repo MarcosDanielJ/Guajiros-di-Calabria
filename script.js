@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <div class="team-member">
                             <img src="img/member1.jpg" alt="Member 1">
                             <h3>Asiel Velasco</h3>
-                            <p>BSc. Mechanical Engineering</p>
+                            <p>BEng. Mechanical Engineering</p>
                             <a href="mailto:email1@example.com">email1@example.com</a>
                         </div>
                         <!-- More team members -->
