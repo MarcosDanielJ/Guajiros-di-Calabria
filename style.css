@@ -1,4 +1,4 @@
-/* Stile generale del corpo della pagina */
+/* General body style */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -14,7 +14,7 @@ html, body {
     overflow-x: hidden;
 }
 
-/* Stile dell'intestazione */
+/* Header styling */
 header {
     height: 100vh;
     display: flex;
@@ -26,7 +26,7 @@ header {
     backdrop-filter: blur(2px);
 }
 
-/* Stile del testo di benvenuto */
+/* Welcome text styling */
 .welcome-text {
     font-size: 2.5em;
     font-weight: bold;
@@ -36,7 +36,7 @@ header {
     animation: fadeIn 1.5s ease-in-out forwards;
 }
 
-/* Animazione di apparizione */
+/* Animation for appearance */
 @keyframes fadeIn {
     to {
         opacity: 1;
@@ -44,7 +44,7 @@ header {
     }
 }
 
-/* Stile delle sezioni */
+/* Section styling */
 .section {
     padding: 60px 20px;
     text-align: center;
@@ -58,7 +58,7 @@ header {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Stile del pulsante del menu */
+/* Menu toggle button */
 .menu-toggle {
     position: fixed;
     top: 20px;
@@ -71,7 +71,7 @@ header {
     z-index: 1001;
 }
 
-/* Stile del menu laterale */
+/* Side menu styling */
 .side-menu {
     position: fixed;
     top: 0;
@@ -103,22 +103,18 @@ header {
     margin: 15px 0;
 }
 
-/* Stile quando il menu è aperto */
 .side-menu.open {
     left: 0;
 }
 
-/* Effetto hover sui link del menu */
 .side-menu a:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    transform: scale(1.1); /* Effetto di ingrandimento leggero */
-    transform-origin: center;
-    transition: transform 0.3s ease-in-out, background 0.3s ease; /* Animazione fluida */
-    padding: 10px 20px; /* Mantiene proporzioni corrette */
+    transform: scale(1.1);
+    padding: 10px 20px;
 }
 
-/* Stile del pulsante di chiusura del menu */
+/* Close button styling */
 .close-btn {
     position: absolute;
     top: 20px;
@@ -130,7 +126,7 @@ header {
     border: none;
 }
 
-/* Adattamenti per schermi più piccoli */
+/* Mobile-specific styling */
 @media (max-width: 768px) {
     .welcome-text {
         font-size: 1.8em;
@@ -156,26 +152,28 @@ header {
     }
 }
 
-/* Logo del team */
-.team-image {
-    width: 80%;
-    max-width: 600px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+/* Project video container */
+.project-video {
+    margin-bottom: 20px;
 }
 
-/* Info sui membri */
+.project-video iframe,
+.project-video video {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+}
+
+/* Content container styling */
 #contentContainer {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%; /* Maggiore adattabilità */
-    max-width: 900px; /* Più spazio per i membri */
+    width: 90%;
+    max-width: 900px;
     height: auto;
-    max-height: 90vh; /* Evita che si espanda troppo */
+    max-height: 90vh;
     background: rgba(0, 47, 94, 0.95);
     color: white;
     padding: 20px;
@@ -183,10 +181,10 @@ header {
     border-radius: 10px;
     text-align: center;
     z-index: 1002;
-    overflow-y: auto; /* Abilita lo scroll se serve */
+    overflow-y: auto;
 }
 
-/* Sistema il layout dei membri per adattarsi meglio */
+/* Team member styling */
 .team-container {
     display: flex;
     flex-wrap: wrap;
@@ -195,7 +193,7 @@ header {
 }
 
 .team-member {
-    width: calc(50% - 20px); /* Riduce la larghezza per stare nei margini */
+    width: calc(50% - 20px);
     max-width: 250px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
@@ -204,10 +202,9 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Media query per adattare la visualizzazione sui dispositivi mobili */
 @media (max-width: 768px) {
     .team-member {
-        width: 100%; /* Full width per mobile */
+        width: 100%;
     }
 }
 
@@ -220,21 +217,17 @@ header {
 
 .team-member h3 {
     font-size: 1.2em;
-    margin: 5px 0;
 }
 
 .team-member p {
     font-size: 1em;
-    margin: 5px 0;
     color: #ddd;
 }
 
 .team-member a {
     display: block;
     color: #00BFFF;
-    text-decoration: none;
     font-weight: bold;
-    margin-top: 5px;
 }
 
 .team-member a:hover {
