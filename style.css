@@ -219,11 +219,13 @@ header {
 }
 
 .team-member img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+    width: 150px;  /* Larghezza fissa */
+    height: 150px; /* Altezza fissa */
+    border-radius: 50%; /* Rende l'immagine tonda */
     margin-bottom: 10px;
+    object-fit: cover; /* Adatta l'immagine al cerchio senza distorcerla */
 }
+
 
 .team-member h3 {
     font-size: 1.2em;
