@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p>Here are some of the projects we've been working on:</p>
                     <div class="project-video">
                         <h3>ASWR Launch March, 21</h3>
-                        <iframe width="560" height="315" src="https://www.instagram.com/reel/DHgwbeeN8xx/?igsh=ZjlpNjNxdHBjd2Z6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://https://www.youtube.com/shorts/_HT3HqNchnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="project-video">
                         <h3>Project 2: Another Awesome Project</h3>
