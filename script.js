@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <a href="mailto:email3@example.com">email3@example.com</a>
                             </div>
                             <div class="team-member">
-                                <img src="img/member4.jpg" alt="Member 4">
+                                <img src="https://raw.githubusercontent.com/MarcosDanielJ/Guajiros-di-Calabria/refs/heads/main/tey.jpg" alt="Member 4">
                                 <h3>Luis O. Tey</h3>
                                 <p>MEng. Mechanical Engineering</p>
                                 <a href="mailto:email4@example.com">email4@example.com</a>
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <img src="https://raw.githubusercontent.com/MarcosDanielJ/Guajiros-di-Calabria/refs/heads/main/IMG_0094.jpg" alt="Member 5">
                                 <h3>Marcos D. Jimenez</h3>
                                 <p>BEng. Electronic Engineering</p>
-                                <a href="mailto:email5@example.com">email5@example.com</a>
+                                <a href="mailto:marcosdaniel20cu@gmail.com">marcosdaniel20cu@gmail.com</a>
                             </div>
                     </div>
                 `;
