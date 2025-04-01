@@ -203,7 +203,7 @@ header {
 }
 
 .team-member {
-    width: calc(50% - 20px);
+    width: calc(50% - 20px); /* Riduce la larghezza per stare nei margini */
     max-width: 250px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
