@@ -78,9 +78,14 @@ document.addEventListener("DOMContentLoaded", function() {
             case "eventi":
                 content = "<h2>Events</h2><p>Upcoming events and past highlights.</p>";
                 break;
+                case "risorse":
+    content = "<h2>Sources</h2><p>Useful resources and references.</p>";
+    content += "<p><a href='path/to/your/file.pdf' 
+    break;
+
            case "risorse":
                 content = "<h2>Sources</h2><p>Useful resources and references.</p>";
-                content += "<p><a href='Airbus_Sloshing_Rocket_Workshop.pdf' target='_blank'>Download the PDF</a></p>";
+                content += "<p><a href='Airbus_Sloshing_Rocket_Workshop.pdf' target='_blank' style='color: #ff6600;'>Download the PDF of our preliminary report for the ASWR 2025!</a></p>";
                 break;
             case "contatti":
                 content = `
