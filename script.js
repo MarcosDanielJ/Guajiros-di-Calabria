@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p>Here are some of the projects we've been working on:</p>
                     <div class="project-video">
                         <h3>ASWR Launch March, 21</h3>
-                        <iframe width="560" height="315" src="https://https://www.youtube.com/shorts/_HT3HqNchnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/shorts/_HT3HqNchnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="project-video">
                         <h3>Project 2: Another Awesome Project</h3>
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <img src="img/member3.jpg" alt="Member 3">
                                 <h3>Jonathan Caro</h3>
                                 <p>BEng. Mechanical Engineering</p>
-                                <a href="mailto:email3@example.com">email3@example.com</a>
+                                <a href="mailto:jonathancarogonzalez5@gmail.com">jonathancarogonzalez5@gmail.com</a>
                             </div>
                             <div class="team-member">
                                 <img src="https://raw.githubusercontent.com/MarcosDanielJ/Guajiros-di-Calabria/refs/heads/main/tey.jpg" alt="Member 4">
