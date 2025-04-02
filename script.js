@@ -56,38 +56,32 @@ document.addEventListener("DOMContentLoaded", function() {
     function showContent(section) {
         let content = "";
         switch(section) {
-            case "progetti":
+            case "projects":
                 content = `
                     <h2>Projects</h2>
                     <p>Here are some of the projects we've been working on:</p>
                     <div class="project-video">
-                        <h3>ASWR Launch March, 21</h3>
+                        <h3>ASRW First Launch March, 21</h3>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/_HT3HqNchnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="project-video">
-                        <h3>Project 2: Another Awesome Project</h3>
-                        <!-- Local video -->
-                        <video width="560" controls>
-                            <source src="https://www.youtube.com/shorts/RRpb3J103oo" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <p>More details coming soon...</p>
+                        
+                    <p>More projects coming soon...</p>
                 `;
                 break;
-            case "eventi":
+            case "events":
                 content = "<h2>Events</h2><p>Upcoming events and past highlights.</p>";
                 break;
-                case "risorse":
+                case "sources":
     content = "<h2>Sources</h2><p>Useful resources and references.</p>";
     content += "<p><a href='path/to/your/file.pdf' 
     break;
 
-           case "risorse":
+           case "sources":
                 content = "<h2>Sources</h2><p>Useful resources and references.</p>";
                 content += "<p><a href='Airbus_Sloshing_Rocket_Workshop.pdf' target='_blank' style='color: #ff6600;'>Download the PDF of our preliminary report for the ASWR 2025!</a></p>";
                 break;
-            case "contatti":
+            case "contacts":
                 content = `
                     <h2>Get in touch</h2>
                     <div class="team-container">
