@@ -203,7 +203,7 @@ header {
 }
 
 .team-member {
-    width: calc(50% - 20px); /* Riduce la larghezza per stare nei margini */
+    width: calc(50% - 20px); /* Reduce the width to stay in the margins */
     max-width: 250px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
@@ -219,13 +219,12 @@ header {
 }
 
 .team-member img {
-    width: 150px;  /* Larghezza fissa */
-    height: 150px; /* Altezza fissa */
-    border-radius: 50%; /* Rende l'immagine tonda */
+    width: 150px;  /* fixed width */
+    height: 150px; /* fixed heigth */
+    border-radius: 50%; /* circular image */
     margin-bottom: 10px;
-    object-fit: cover; /* Adatta l'immagine al cerchio senza distorcerla */
+    object-fit: cover; /* keep the image centered without affecting the integrity */
 }
-
 
 .team-member h3 {
     font-size: 1.2em;
